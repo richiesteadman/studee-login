@@ -1,0 +1,126 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  color: #17042B;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+
+nav {
+  -webkit-box-shadow:0px 2px 4px 0px rgba(62,66,66,0.5);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(62,66,66,0.5);
+  box-shadow: 0px 2px 4px 0px rgba(62,66,66,0.5);
+  z-index: 1;
+}
+
+.inner-col {
+  max-width: 410px;
+}
+#inner-col-left {
+  margin-right: 100px;
+  padding: 10% 0;
+}
+#inner-col-right {
+  margin-left: 100px;
+  padding: 10% 0;
+}
+
+a {
+  color: #603392
+}
+a:hover {
+  color: #6C63FF;
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+  font-weight: 700;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.btn-primary {
+  background-color: #603392;
+  border-color: #603392;
+}
+.btn-primary:hover {
+  background-color: #6C63FF;
+  border-color: #6C63FF;
+}
+
+.btn-outline-google {
+  color: #3E82F7;
+  border-color: #3E82F7;
+}
+.btn-outline-google:hover {
+  color: white;
+  background-color: #3E82F7;
+}
+
+.btn-outline-facebook {
+  color: #3B5998;
+  border-color: #3B5998;
+}
+.btn-outline-facebook:hover {
+  color: white;
+  background-color: #3B5998;
+}
+
+.back::before {
+  content: '';
+  background: url(./arrow-left.png) no-repeat;
+  width: 12px;
+  height: 15px;
+  float: left;
+  margin: 0 -12px 0 0;
+  position: relative;
+  left: -20px;
+  top: 4px;
+}
+
+#email-address, #password {
+  background-color: #EFEAF4;
+  border-color: #EFEAF4;
+}
+#email-address::placeholder, #password::placeholder {
+  color: #17042B;
+}
+
+#welcome-container {
+  background-color: #EFEAF4;
+}
+
+@media (max-width: 1200px) {
+  .inner-col {
+    margin: 0 15%;
+  }
+}
+
+@media (max-width: 992px) {
+  #welcome-container {
+    display: none;
+  }
+  #login-container {
+    justify-content: center !important;
+  }
+  .inner-col, #inner-col-left {
+    margin: 0 15px;
+    padding: 15px 0;
+  }
+  #sign-in {
+    width: 100%;
+  }
+  .back {
+    display: none;
+  }
+}
